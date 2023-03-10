@@ -7,16 +7,16 @@ function showTime(){
     
     if(hour > 12){
         hour -= 12;
-        am_pm= 'PM'
+       
     }
 
    if(hour == 0){
     hour=12;
-    am_pm= 'AM'
+   
    }
 
-    console.log(hour + ' : ' + min + ' : ' + sec + ' : ' + am_pm )
-   let currentTime= hour + ' : ' + min + ' : ' + sec + ' : ' + am_pm 
+    console.log(hour + ' : ' + min + ' : ' + sec)
+   let currentTime= hour + ' : ' + min + ' : ' + sec
     
     // display for time
     document.getElementById('clock').innerHTML=currentTime;
